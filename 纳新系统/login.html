@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <p class="title">
+        <span class="bond">Thought</span><span>Works</span>
+    </p>
+    <p class="slogan">Come and join us</p>
+    <form action="/push" method="post" onsubmit="return checkSubmit()">
+        <div class="information number">
+            <input type="text" id="number" name="number" placeholder="学号"><span class="bar"></span>
+
+        </div>
+        <div class="information password">
+            <input type="password" id="password" name="password" placeholder="密码"><span class="bar"></span>
+
+        </div>
+        <div class="login">
+            <button type="submit" >登陆</button>
+        </div>
+    </form>
+
+</body>
+</html>

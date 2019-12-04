@@ -1,0 +1,109 @@
+/*导入字体*/
+@font-face {
+    font-family: MyCustomFont;
+    src: url("../source/方正宋刻本秀楷简.TTF");
+}
+
+.page_main{
+    width: 100%;
+    font-family: MyCustomFont;
+}
+.contain{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
+}
+.page_bg4{
+    position: absolute;
+    left: -10px;
+    width: 10%;
+    height: 250px;
+    z-index: -1;
+    /*top: ;*/
+}
+.page_bg5{
+    position: absolute;
+    width: 10%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#img_show{
+    background: url("../source/picture/横幅.jpg") no-repeat 120px 0;
+    margin: 0 auto;
+    width: 80%;
+    height: 218px;
+    line-height: 218px;
+}
+#a{
+    background: url("../source/picture/背景.jpg") no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 120px 200px;
+    height: 500px;
+}
+#a img{
+    float: right;
+    position: relative;
+    top: -60px;
+    width: 60px;
+    height: 60px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 4em;
+}
+p{
+    text-indent: 2em;
+    font-size: 2em;
+}
+#roll{
+    width:100%;
+    overflow: hidden;
+	margin-bottom:30px;
+}
+#div1{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+#roll ul{
+    /*list-style: none;*/
+    width: 100%;
+    padding: 0;
+    height: 400px;
+    position: absolute;
+    left: 0;
+}
+#roll li{
+    height: 400px;
+    float: left;
+}
+#roll img{
+    height: 400px;
+}
+.show-more{
+    text-align: center;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    background-color: #0680cd;
+    color: white;
+    margin: 20px 400px;
+    border-radius: 10px;
+}
+.show-more a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.show-more:hover{
+    box-shadow: 0 0 0 2px rgb(5, 113, 181);
+    text-decoration: underline;
+}

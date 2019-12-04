@@ -1,0 +1,34 @@
+	@-webkit-keyframes reverseRotataZ {
+		0% {
+			-webkit-transform: rotateZ(0deg);/*start*/
+		}
+		100% {
+			-webkit-transform: rotateZ(-360deg);/*end*/
+		}
+	}
+
+	.music-link a{
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		position:absolute;
+		right:10px;
+		top:10px;
+		overflow: hidden;
+		background: url('../source/picture/play.png') no-repeat;
+		background-size: 100%;
+	}
+
+	.music-link a audio {
+		width: 100%;
+		height: 56px;
+	}
+
+	.music-link a.stop { 	/*切换图片*/
+		background-position: left bottom;
+	}
+
+	.music-link a.on {
+		background-position: 0px 1px;
+		-webkit-animation: reverseRotataZ 2.2s linear infinite;
+	}

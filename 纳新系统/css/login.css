@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:#cdf5fd;
+    color: #669ee7;
+}
+.title {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 150px;
+    -webkit-animation:bounceIn .5s ease 0.5s forwards;
+}
+.title .bond{
+    font-weight: bold;
+}
+.slogan{
+    font-family: Mae;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+    -webkit-animation:bounceIn .5s ease 0.5s forwards;
+}
+input{
+    font-family: Mae;
+    text-align: start;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #669ee7;
+    width: 70%;
+    font-size: 50px;
+    padding-bottom: 25px;
+}
+input::-webkit-input-placeholder{
+    color:#669ee7;
+}
+/*label{*/
+/*    font-family: Mae;*/
+/*     font-size: 50px;*/
+/*     position: absolute;*/
+/*     left: 12%;*/
+/* }*/
+/*input:focus ~ label{*/
+/*    top: -50px;*/
+/*    font-size: 30px;*/
+/*}*/
+.bar:before {
+    content: '';
+    height: 4px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #FFFFFF;
+    -webkit-transition: 300ms ease all;
+    transition: 300ms ease all;
+    left: 15%;
+}
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before {
+    width: 70%;
+}
+.number{
+    margin-top: 350px;
+    opacity: 0;
+    -webkit-animation:numSlideInUp 1.5s ease 1.0s forwards;
+}
+.password{
+    margin-top: 140px;
+    opacity: 0;
+    -webkit-animation:numSlideInUp 1.5s ease 1.2s forwards;
+}
+.login{
+    margin-top: 140px;
+    opacity: 0;
+    -webkit-animation:numSlideInUp 1.5s ease 1.7s forwards;
+}
+.login button{
+    font-family: Mae;
+    outline: none;
+    background-color: #669ee7;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 65px;
+    width: 60%;
+    height: 130px;
+    padding: 10px 16px;
+    font-size: 50px;
+}
+.login button:hover{
+    border-color: #269abc;
+}
+
+/*ipad*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+    .title{
+        font-size: 70px;
+        margin-top: 50px;
+    }
+    .slogan{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    input{
+        width: 60%;
+        height: 30px;
+        font-size: 40px;
+        padding-bottom: 5px;
+        border-bottom: 3px solid #669ee7;
+    }
+    .number{
+        margin-top: 300px;
+    }
+    .password{
+        margin-top: 120px;
+    }
+    .login{
+        margin-top: 120px;
+    }
+    .bar:before {
+        height: 4px;
+        left: 20%;
+    }
+    input:focus ~ .bar:before,
+    textarea:focus ~ .bar:before {
+        width: 60%;
+    }
+    .login button{
+        width: 60%;
+        padding: 10px 16px;
+        font-size: 40px;
+        height: 100px;
+    }
+}
+
+/*PC*/
+@media (min-width: 1024px){
+    .title{
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    .slogan{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    input{
+        width: 20%;
+        height: 30px;
+        font-size: 18px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #669ee7;
+    }
+    .number{
+        margin-top: 100px;
+    }
+    .password{
+        margin-top: 50px;
+    }
+    .login{
+        margin-top: 50px;
+    }
+    /*label{*/
+    /*    font-size: 18px;*/
+    /*    left: 36%;*/
+    /*}*/
+    /*input:focus ~ label{*/
+    /*      top: -20px;*/
+    /*      font-size: 12px;*/
+    /*  }*/
+    .bar:before {
+        height: 2px;
+        left: 40%;
+    }
+    input:focus ~ .bar:before,
+    textarea:focus ~ .bar:before {
+        width: 20%;
+    }
+    .login button{
+        width: 20%;
+        padding: 10px 16px;
+        font-size: 18px;
+        height: 50px;
+    }
+
+}
+
+
+@font-face {
+    font-family: Mae;
+    src: url("../font-family/mtFont.ttf");
+}
+/*字体弹跳*/
+@-webkit-keyframes bounceIn
+{
+    0%   { transform:scale(0,0);-webkit-transform:scale(0,0) translateZ(0);opacity: 0;}
+    50%  {transform:scale(1.05,1.05);-webkit-transform:scale(1.05,1.05) translateZ(0);opacity: 1;}
+    70%  {transform:scale(.9,.9);-webkit-transform:scale(.9,.9) translateZ(0);}
+    100% {transform:scale(1,1);-webkit-transform:scale(1,1) translateZ(0);opacity: 1;}
+
+}
+/*渐显*/
+@-webkit-keyframes numSlideInUp{
+    0%{-webkit-transform:translateY(50%);opacity: 0;}
+    100%{-webkit-transform:translateY(0%);opacity: 1;}
+}
+
+
+
+
